@@ -60,6 +60,9 @@ const updaterMap = {
   revertstyle(instance: google.maps.Data, feature: google.maps.Data.Feature): void {
     instance.revertStyle(feature)
   },
+  controlposition(instance: google.maps.Data, controlPosition: google.maps.ControlPosition): void {
+    instance.setControlPosition(controlPosition)
+  },
   controls(instance: google.maps.Data, controls: string[] | null): void {
     instance.setControls(controls)
   },
